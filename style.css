@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(122, 9, 122);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.parent {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.parent i {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.parent p.number {
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+
+.parent p.infos {
+    letter-spacing: .5px;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+}
